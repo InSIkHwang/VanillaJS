@@ -1,28 +1,24 @@
 const calculator = {
     add: function(a, b){
-        console.log(a + b);
+        return a + b;
     },
     minus: function(a, b){
-        console.log(a - b);
+        return a - b;
     },
     power: function(a, b){
-        console.log(a ** b);
+        return a ** b;
     },
     div: function(a, b){
-        console.log(a / b);
+        return a / b;
     },
     mul: function(a, b){
-        console.log(a * b);
+        return a * b;
     },
 
 };
 
-calculator.add(5, 5);
-
-calculator.minus(5, 5);
-
-calculator.power(5, 2);
-
-calculator.div(5, 5);
-
-calculator.mul(5, 5);
+const addResult = calculator.add(2,3);
+const minusResult = calculator.minus(addResult,10);
+const mulResult = calculator.mul(10,minusResult);
+const divResult = calculator.div(mulResult,addResult);
+const powerResult = calculator.power(divResult,minusResult);
